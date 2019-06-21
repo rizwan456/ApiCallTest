@@ -10,6 +10,7 @@ import com.rizz.apicalltest.aaprepos.details.model.EmployeeDetails;
 import com.rizz.apicalltest.databinding.ActivityMainBinding;
 import com.rizz.apicalltest.fragment.EmployeeFragment;
 import com.rizz.apicalltest.fragment.EmployeesDetailsFragment;
+import com.rizz.apicalltest.fragment.FeedsFragment;
 import com.rizz.apicalltest.fragment.ProfileFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,11 +21,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Fresco.initialize(this);
+        //getActionBar().hide();
         mainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         setUp();
     }
 
     private void setUp() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout, ProfileFragment.newInstance(null, null)).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout, FeedsFragment.newInstance(null, null)).commit();
     }
 }

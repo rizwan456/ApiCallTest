@@ -6,6 +6,8 @@ import android.net.NetworkInfo;
 
 import com.rizz.apicalltest.aaprepos.details.model.EmployeeDetails;
 import com.rizz.apicalltest.aaprepos.employees.model.Employee;
+import com.rizz.apicalltest.aaprepos.feeds.model.Feeds;
+import com.rizz.apicalltest.aaprepos.home.model.Home;
 import com.rizz.apicalltest.aaprepos.notification.model.Notification;
 import com.rizz.apicalltest.aaprepos.profile.model.Profile;
 import com.rizz.apicalltest.applications.HelperApplication;
@@ -58,6 +60,23 @@ public class Utility {
     public static List<Notification> generateNotification(){
         List<Notification> list=new ArrayList<>();
 
+        return list;
+    }
+
+    public static List<Home> generateHome(){
+        List<Home> list=new ArrayList<>();
+
+        return list;
+    }
+
+    public static List<Feeds> generateFeeds(){
+        List<Feeds> list=new ArrayList<>();
+        list.add(new Feeds("https://img1.thelist.com/img/gallery/the-stunning-transformation-of-robert-downey-jr/intro-1499809511.jpg","https://static.gamespot.com/uploads/scale_super/171/1712892/3550623-avengers-endgame-finale-top3.jpg"));
+        list.add(new Feeds("https://img1.thelist.com/img/gallery/the-stunning-transformation-of-robert-downey-jr/intro-1499809511.jpg","https://static.gamespot.com/uploads/scale_super/171/1712892/3550623-avengers-endgame-finale-top3.jpg"));
+        list.add(new Feeds("https://img1.thelist.com/img/gallery/the-stunning-transformation-of-robert-downey-jr/intro-1499809511.jpg","https://static.gamespot.com/uploads/scale_super/171/1712892/3550623-avengers-endgame-finale-top3.jpg"));
+        list.add(new Feeds("https://img1.thelist.com/img/gallery/the-stunning-transformation-of-robert-downey-jr/intro-1499809511.jpg","https://static.gamespot.com/uploads/scale_super/171/1712892/3550623-avengers-endgame-finale-top3.jpg"));
+        list.add(new Feeds("https://img1.thelist.com/img/gallery/the-stunning-transformation-of-robert-downey-jr/intro-1499809511.jpg","https://static.gamespot.com/uploads/scale_super/171/1712892/3550623-avengers-endgame-finale-top3.jpg"));
+        list.add(new Feeds("https://img1.thelist.com/img/gallery/the-stunning-transformation-of-robert-downey-jr/intro-1499809511.jpg","https://static.gamespot.com/uploads/scale_super/171/1712892/3550623-avengers-endgame-finale-top3.jpg"));
         return list;
     }
 }
